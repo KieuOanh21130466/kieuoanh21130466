@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab1_2</title>
+
+</head>
+<style>
+  header, nav, footer, body, aside, article {
+    border: 1px solid black;
+
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* Style the header */
+  header {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+
+  }
+  /*Style the navigation */
+
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+  }
+
+  /* Style the list inside the menu */
+
+  aside {
+  float: left;
+  width: 70%;
+  font-size: 20px;
+  height: 300px; /* only for demonstration, should be removed */
+  padding: 20px;
+  }
+  article {
+    float: left;
+    padding: 20px;
+    width: 30%;
+    font-size: 20px;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer */
+  footer {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+<body>
+<tr>
+  <header>
+    <h3><b>Header Section</b></h3>
+  </header>
+</tr>
+
+  <nav>
+     <b>Navigation Bar</b>
+  </nav>
+<section>
+
+  <article>
+    <p> <b>Index</b> </p>
+  </article>
+
+  <aside> <p>
+   <b> Content Section </b>
+  </p></aside>
+
+</section>
+
+<footer>
+  <p><b>Footer Section</b></p>
+</footer>
+</body>
+</html>
+
